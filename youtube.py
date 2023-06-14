@@ -1,4 +1,7 @@
-import youtube_dl
+from flask import Flask
+app = Flask(__name__)
 
-def download(url):
-  # code to download YouTube video from URL
+@app.route('/convert')
+def convert():
+  # code to convert YouTube video  
+  return 'result.mp4'
